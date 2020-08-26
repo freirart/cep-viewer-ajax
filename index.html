@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEP Viewer</title>
+  <script src="https://kit.fontawesome.com/6e502b8152.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section class="main-cep">
+      <label for="cep-input">Entre com o cep</label>
+      <input type="text" id="cep-input" name="cep" />
+      <button>
+        <i class="fas fa-search"></i>
+        Buscar
+      </button>
+    </section>
+
+    <section id="none" class="req-status">
+      <i class="far fa-hourglass"></i>
+      <p>Requisitando dados...</p>
+    </section>
+
+    <section id="none" class="cep-data">
+
+      <div class="logradouro">
+        <strong>Logradouro</strong>
+        <span data-js="logradouro">o</span>
+      </div>
+
+      <div class="bairro">
+        <strong>Bairro</strong>
+        <span data-js="bairro">p</span>
+      </div>
+
+      <div class="cidade">
+        <strong>Cidade</strong>
+        <span data-js="cidade">a</span>
+      </div>
+
+      <div class="estado">
+        <strong>Estado</strong>
+        <span data-js="estado">b</span>
+      </div>
+
+      <div class="cep">
+        <strong>Cep</strong>
+        <span data-js="cep">ao</span>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>

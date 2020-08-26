@@ -1,0 +1,131 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #2b2b2b;
+}
+
+#none{
+  display: none;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #efefef;
+}
+
+label, strong{
+  font-family: Poppins;
+}
+
+input, p, span, button{
+  font-family: Roboto;
+}
+
+section{
+  margin: 3rem;
+}
+
+.main-cep{
+  background: #fff;
+  height: 10rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  margin-bottom: 0;
+}
+
+.main-cep input{
+  margin-top: .5rem;
+  height: 2rem;
+  border: 0;
+  background: #eee;
+  padding-left: 0.5rem;
+  outline: none;
+}
+
+.main-cep input:focus{
+  border-left: 1px solid #ffa126;
+}
+
+.main-cep button {
+  position: relative;
+  margin: auto;
+  width: 5rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: #ffa126;
+  cursor: pointer;
+}
+
+.main-cep button:hover{
+  background: #ff9000;
+}
+
+.req-status{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 90%;
+  background: #ffe900;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.req-status p {
+  margin-top: 0.5rem;
+}
+
+.cep-data{
+  margin-top: 0;
+  background: #fff;
+  width: 90%;
+  padding: 4rem;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "logradouro logradouro bairro"
+    "cidade estado cep"
+  ;
+}
+
+.cep-data div span{
+  background: #eee;
+}
+
+.cep-data div{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.logradouro{
+  grid-area: logradouro;
+}
+
+.bairro{
+  grid-area: bairro;
+}
+
+.cidade{
+  grid-area: cidade;
+}
+
+.estado{
+  grid-area: estado;
+}
+
+.cep{
+  grid-area: cep;
+}
