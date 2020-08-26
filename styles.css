@@ -19,44 +19,43 @@ main{
   background: #efefef;
 }
 
-label, strong{
-  font-family: Poppins;
+label, strong, button{
+  font-family: 'Poppins', 'sans-serif';
 }
 
-input, p, span, button{
-  font-family: Roboto;
-}
-
-section{
-  margin: 3rem;
+input, p, span{
+  font-family: 'Roboto', 'sans-serif';
 }
 
 .main-cep{
   background: #fff;
   height: 10rem;
   width: 20rem;
+  border-radius: 1rem;
+}
+
+.main-cep form{
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  justify-content: space-evenly;
-  border-radius: 1rem;
-  margin-bottom: 0;
+  justify-content: space-between;
 }
 
-.main-cep input{
+.main-cep form input{
   margin-top: .5rem;
   height: 2rem;
   border: 0;
   background: #eee;
   padding-left: 0.5rem;
   outline: none;
+  margin-bottom: 0.5rem;
 }
 
-.main-cep input:focus{
-  border-left: 1px solid #ffa126;
+.main-cep form input:focus{
+  border-left: 2px solid #ffa126;
 }
 
-.main-cep button {
+.main-cep form button {
   position: relative;
   margin: auto;
   width: 5rem;
@@ -67,7 +66,7 @@ section{
   cursor: pointer;
 }
 
-.main-cep button:hover{
+.main-cep form button:hover{
   background: #ff9000;
 }
 
@@ -79,7 +78,6 @@ section{
   width: 90%;
   background: #ffe900;
   margin-top: 2rem;
-  margin-bottom: 0;
 }
 
 .req-status p {
@@ -87,7 +85,6 @@ section{
 }
 
 .cep-data{
-  margin-top: 0;
   background: #fff;
   width: 90%;
   padding: 4rem;
