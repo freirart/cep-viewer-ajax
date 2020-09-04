@@ -143,7 +143,7 @@
   }
 
   function vanish() {
-    setTimeout(() => {$divStatus.classList.add('hidden');}, 3000);
+    setTimeout(() => {$divStatus.classList.add('hidden');}, 5000);
   }
 
   function showError404() {
