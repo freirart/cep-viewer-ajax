@@ -71,20 +71,41 @@ input, p, span{
 }
 
 .req-status{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 1rem;
-  width: 90%;
-  background: #ffe900;
   margin-top: 2rem;
+  border-radius: .5rem;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.req-status.loading{
+  background: #ffe900;
+}
+
+.req-status.error{
+  background: #fc4e68;
+}
+
+.req-status.success{
+  background: #00fc6d;
+}
+
+.req-status.hidden{
+  opacity: 0;
+  right: 0;
 }
 
 .req-status p {
-  margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .cep-data{
+  margin: 2rem;
   background: #fff;
   width: 90%;
   padding: 4rem;
@@ -95,10 +116,16 @@ input, p, span{
     "logradouro logradouro bairro"
     "cidade estado cep"
   ;
+  border-radius: .5rem;
 }
 
 .cep-data div span{
   background: #eee;
+  min-height: 1.6rem;
+  padding-left: .5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.3rem;
 }
 
 .cep-data div{
