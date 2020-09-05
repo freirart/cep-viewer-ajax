@@ -16,7 +16,12 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #efefef;
+  background-color: #efefef;
+  transition: background-color 2s;
+}
+
+main.typing{
+  background: orange;
 }
 
 label, strong, button{
@@ -41,10 +46,36 @@ input, p, span{
   justify-content: space-between;
 }
 
-.main-cep form input{
+.main-cep form div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-cep form div span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fce3c2;
+  height: 2rem;
+  width: 15%;
+  border-radius: 0.5rem 0 0 0.5rem;
+  color: #3a3a3a;
+  transition: 2s;
+}
+
+.main-cep form div span.typing{
+  background: orange;
+}
+
+.main-cep form div input{
+  display: inline-block;
+  width: 85%;
   margin-top: .5rem;
   height: 2rem;
   border: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
   background: #eee;
   padding-left: 0.5rem;
   outline: none;
@@ -52,7 +83,7 @@ input, p, span{
 }
 
 .main-cep form input:focus{
-  border-left: 2px solid #ffa126;
+  border-bottom: 1px solid #fcae49;
 }
 
 .main-cep form button {

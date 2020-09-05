@@ -9,19 +9,22 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main>
+  <main class="">
     <section class="main-cep">
       <form>
         <label for="cep-input">Entre com o cep</label>
-        <input 
-          type="text" 
-          id="cep-input" 
-          placeholder="########"
-          name="cep" 
-          maxlength="10"
-          min-lenght="10"
-          required
-        />
+        <div>
+          <span>#</span>
+          <input 
+            type="text" 
+            id="cep-input" 
+            placeholder="__.___-___"
+            name="cep" 
+            maxlength="10"
+            min-lenght="10"
+            required
+          />
+        </div>
         <button type="submit">
           <i class="fas fa-search"></i>
           Buscar
